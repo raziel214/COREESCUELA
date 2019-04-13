@@ -1,0 +1,11 @@
+E:\c#sharp\COREESCUELA\bin\Debug\netcoreapp2.2\COREESCUELA.deps.json
+E:\c#sharp\COREESCUELA\bin\Debug\netcoreapp2.2\COREESCUELA.runtimeconfig.json
+E:\c#sharp\COREESCUELA\bin\Debug\netcoreapp2.2\COREESCUELA.runtimeconfig.dev.json
+E:\c#sharp\COREESCUELA\bin\Debug\netcoreapp2.2\COREESCUELA.dll
+E:\c#sharp\COREESCUELA\bin\Debug\netcoreapp2.2\COREESCUELA.pdb
+E:\c#sharp\COREESCUELA\obj\Debug\netcoreapp2.2\COREESCUELA.csprojAssemblyReference.cache
+E:\c#sharp\COREESCUELA\obj\Debug\netcoreapp2.2\COREESCUELA.csproj.CoreCompileInputs.cache
+E:\c#sharp\COREESCUELA\obj\Debug\netcoreapp2.2\COREESCUELA.AssemblyInfoInputs.cache
+E:\c#sharp\COREESCUELA\obj\Debug\netcoreapp2.2\COREESCUELA.AssemblyInfo.cs
+E:\c#sharp\COREESCUELA\obj\Debug\netcoreapp2.2\COREESCUELA.dll
+E:\c#sharp\COREESCUELA\obj\Debug\netcoreapp2.2\COREESCUELA.pdb
