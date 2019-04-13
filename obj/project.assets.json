@@ -692,11 +692,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\c#sharp\\Etapa1\\Etapa1.csproj",
+      "projectUniqueName": "C:\\Users\\Raziel214\\Documents\\GitHub\\COREESCUELA\\Etapa1.csproj",
       "projectName": "Etapa1",
-      "projectPath": "E:\\c#sharp\\Etapa1\\Etapa1.csproj",
+      "projectPath": "C:\\Users\\Raziel214\\Documents\\GitHub\\COREESCUELA\\Etapa1.csproj",
       "packagesPath": "C:\\Users\\Raziel214\\.nuget\\packages\\",
-      "outputPath": "E:\\c#sharp\\Etapa1\\obj\\",
+      "outputPath": "C:\\Users\\Raziel214\\Documents\\GitHub\\COREESCUELA\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
