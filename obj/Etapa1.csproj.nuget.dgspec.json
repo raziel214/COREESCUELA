@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\c#sharp\\COREESCUELA\\COREESCUELA.csproj": {}
+    "E:\\c#sharp\\Etapa1\\Etapa1.csproj": {}
   },
   "projects": {
-    "E:\\c#sharp\\COREESCUELA\\COREESCUELA.csproj": {
+    "E:\\c#sharp\\Etapa1\\Etapa1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\c#sharp\\COREESCUELA\\COREESCUELA.csproj",
-        "projectName": "COREESCUELA",
-        "projectPath": "E:\\c#sharp\\COREESCUELA\\COREESCUELA.csproj",
+        "projectUniqueName": "E:\\c#sharp\\Etapa1\\Etapa1.csproj",
+        "projectName": "Etapa1",
+        "projectPath": "E:\\c#sharp\\Etapa1\\Etapa1.csproj",
         "packagesPath": "C:\\Users\\Raziel214\\.nuget\\packages\\",
-        "outputPath": "E:\\c#sharp\\COREESCUELA\\obj\\",
+        "outputPath": "E:\\c#sharp\\Etapa1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

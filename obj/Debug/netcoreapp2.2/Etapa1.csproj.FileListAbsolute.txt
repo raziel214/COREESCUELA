@@ -1,0 +1,11 @@
+E:\c#sharp\Etapa1\bin\Debug\netcoreapp2.2\Etapa1.deps.json
+E:\c#sharp\Etapa1\bin\Debug\netcoreapp2.2\Etapa1.runtimeconfig.json
+E:\c#sharp\Etapa1\bin\Debug\netcoreapp2.2\Etapa1.runtimeconfig.dev.json
+E:\c#sharp\Etapa1\bin\Debug\netcoreapp2.2\Etapa1.dll
+E:\c#sharp\Etapa1\bin\Debug\netcoreapp2.2\Etapa1.pdb
+E:\c#sharp\Etapa1\obj\Debug\netcoreapp2.2\Etapa1.csprojAssemblyReference.cache
+E:\c#sharp\Etapa1\obj\Debug\netcoreapp2.2\Etapa1.csproj.CoreCompileInputs.cache
+E:\c#sharp\Etapa1\obj\Debug\netcoreapp2.2\Etapa1.AssemblyInfoInputs.cache
+E:\c#sharp\Etapa1\obj\Debug\netcoreapp2.2\Etapa1.AssemblyInfo.cs
+E:\c#sharp\Etapa1\obj\Debug\netcoreapp2.2\Etapa1.dll
+E:\c#sharp\Etapa1\obj\Debug\netcoreapp2.2\Etapa1.pdb
