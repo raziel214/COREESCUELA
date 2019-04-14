@@ -20,6 +20,8 @@ namespace CoreEscuela.Entidades
 
         public TiposEscuela TipoEscuela{get;set;}
 
+        public Curso[] MyProperty { get; set; }
+
         /** public Escuela(string nombre,int anio){
              this.nombre=nombre;
               AnioDeCreacion=anio;
@@ -43,7 +45,7 @@ namespace CoreEscuela.Entidades
         public override string ToString(){
 
             return $"Nombre: \"{Nombre}\", Tipo: {TipoEscuela} {System.Environment.NewLine},Pais: {Pais},Ciudad: {Ciudad}";
-           // return $"Nombre: \"{Nombre}\", Tipo: {TipoEscuela} {System.Environment.NewLine} Pais: {Pais}, Ciudad:{Ciudad}";
+           
         }
 
 
