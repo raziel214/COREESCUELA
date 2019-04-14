@@ -20,7 +20,7 @@ namespace CoreEscuela.Entidades
 
         public TiposEscuela TipoEscuela{get;set;}
 
-        public Curso[] MyProperty { get; set; }
+        public Curso[] Cursos { get; set; }
 
         /** public Escuela(string nombre,int anio){
              this.nombre=nombre;

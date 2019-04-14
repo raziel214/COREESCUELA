@@ -1,5 +1,6 @@
 ﻿using System;
 using CoreEscuela.Entidades;
+using static System.Console;
 
 namespace Etapa1
 {
@@ -17,12 +18,19 @@ namespace Etapa1
 
             };*/
 
-            Curso[] arregloCursos = {
+            escuela.Cursos = new Curso[]  {
                     new Curso{Nombre="201"},
                     new Curso{Nombre="202"},
                     new Curso{Nombre="203"}
 
             };
+            //escuela = null;
+
+            ImprimirCUrsosEscuela(escuela);
+
+            //escuela.Cursos=arregloCursos;
+
+
 
             /** arregloCursos[0] = new Curso()
             {
@@ -53,16 +61,42 @@ namespace Etapa1
                 Nombre = "301",
 
             };**/
-            //escuela.Pais="Colombia";
-            //escuela.ciudad="Cali";
-            //escuela.Nombre="John's School";
-            //escuela.TipoEscuela=TiposEscuela.Secundaria;
-            Console.WriteLine(escuela);
-            System.Console.WriteLine("#############");
-            ImprimirCursosFor(arregloCursos);
-            System.Console.WriteLine("#############");
-            ImprimirCursosForEach(arregloCursos);
 
+
+            /** //escuela.Pais="Colombia";
+             //escuela.ciudad="Cali";
+             //escuela.Nombre="John's School";
+             //escuela.TipoEscuela=TiposEscuela.Secundaria;
+             Console.WriteLine(escuela);
+             System.Console.WriteLine("#############");
+             ImprimirCursosFor(escuela.Cursos);
+             System.Console.WriteLine("#############");
+             ImprimirCursosForEach(escuela.Cursos); */
+
+        }
+
+        private static void ImprimirCUrsosEscuela(Escuela escuela)
+        {
+            TimeSpan stop;
+            TimeSpan start = new TimeSpan(DateTime.Now.Ticks);
+            WriteLine("#############################");
+            WriteLine("Cursos de la escuela");
+            WriteLine("#############################");
+            if (escuela?.Cursos != null)
+            {
+
+
+                foreach (var curso in escuela.Cursos)
+                {
+                    WriteLine($"Nombre{curso.Nombre},Id {curso.UniqueId} ");
+                }
+            }
+            else
+            {
+                WriteLine(" No hay cursos disponibles");
+            }
+            stop = new TimeSpan(DateTime.Now.Ticks);
+            WriteLine(stop.Subtract(start).TotalMilliseconds);
         }
 
         private static void ImprimirCursosForEach(Curso[] arregloCursos)
