@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using CoreEscuela.Entidades;
 using static System.Console;
 
@@ -18,12 +19,20 @@ namespace Etapa1
 
             };*/
 
-            escuela.Cursos = new Curso[]  {
-                    new Curso{Nombre="201"},
-                    new Curso{Nombre="202"},
-                    new Curso{Nombre="203"}
-
+            escuela.Cursos = new List<Curso>(){
+                new Curso{Nombre="201"},
+                new Curso{Nombre="202"},
+                new Curso{Nombre="203"}
             };
+
+            escuela.Cursos.Add(new Curso{Nombre="204"});
+
+            /* escuela.Cursos = new Curso[]  {
+                     new Curso{Nombre="201"},
+                     new Curso{Nombre="202"},
+                     new Curso{Nombre="203"}
+
+             }; */
             //escuela = null;
 
             ImprimirCUrsosEscuela(escuela);
