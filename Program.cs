@@ -17,7 +17,7 @@ namespace Etapa1 {
             };*/
 
             escuela.Cursos = new List<Curso> () {
-                new Curso { Nombre = "101", Jornada = TiposJornada.Mañana },
+                new Curso { Nombre = "101", Jornada = TiposJornada.Noche },
                 new Curso { Nombre = "201", Jornada = TiposJornada.Mañana },
                 new Curso { Nombre = "301", Jornada = TiposJornada.Mañana }
             };
@@ -27,6 +27,7 @@ namespace Etapa1 {
             var otraollection = new List<Curso> () {
                 new Curso { Nombre = "401", Jornada = TiposJornada.Tarde },
                 new Curso { Nombre = "501", Jornada = TiposJornada.Tarde },
+                new Curso { Nombre = "501", Jornada = TiposJornada.Noche },
                 new Curso { Nombre = "502", Jornada = TiposJornada.Tarde }
             };
             Curso tmp = new Curso () {
@@ -34,11 +35,16 @@ namespace Etapa1 {
 
             };
             otraollection.Clear ();
-            escuela.Cursos.Add (tmp);
+            /*escuela.Cursos.Add (tmp);
             escuela.Cursos.AddRange (otraollection);
-            ImprimirCUrsosEscuela (escuela);            
-            
-            escuela.Cursos.RemoveAll (Predicado);
+            ImprimirCUrsosEscuela (escuela);
+            escuela.Cursos.RemoveAll (delegate(Curso cur)
+                                        { return cur.Nombre=="301"; 
+                                        }); 
+
+            escuela.Cursos.RemoveAll( (Curso cur)=> cur.Nombre == "101"&&cur.Jornada==TiposJornada.Noche);
+            */
+
             WriteLine ("### nuevos");
             ImprimirCUrsosEscuela (escuela);
 
@@ -104,6 +110,9 @@ namespace Etapa1 {
             return cursobj.Nombre == "101.Vacacional";
         }
 
+        ///<SUMARY>
+        ///
+        ///
         private static void ImprimirCUrsosEscuela (Escuela escuela) {
             TimeSpan stop;
             TimeSpan start = new TimeSpan (DateTime.Now.Ticks);
