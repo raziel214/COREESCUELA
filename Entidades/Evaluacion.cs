@@ -12,6 +12,9 @@ namespace CoreEscuela.Entidades
 
         public float Nota { get; set; }
 
-    
+        public override  string ToString()
+         {
+             return $"{Nota},{Alumno},{Asignatura.Nombre}";
+          }    
     }
 }
