@@ -40,7 +40,7 @@ namespace CoreEscuela.Entidades
             {
                 curso.LimpiarLugar();
             }
-            System.Console.WriteLine($"Curso{Nombre} Limpia ");
+            Printer.WriteTitle($"Escuela {Nombre} Limpia ");
         }
 
     }
