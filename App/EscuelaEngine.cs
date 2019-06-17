@@ -23,7 +23,8 @@ namespace CoreEscuela {
 
         }
 
-        public List<ObjetoEscuelaBase>GetObjetosEscuela(
+      
+        public IReadOnlyList<ObjetoEscuelaBase>GetObjetosEscuela(
                         bool traeEvaluaciones,
                         bool traeAlumnos,
                         bool traeAsignaturas,
@@ -33,7 +34,7 @@ namespace CoreEscuela {
             return GetObjetosEscuela(out int dummy,out dummy,out dummy,out dummy);
 
         }
-        public List<ObjetoEscuelaBase> GetObjetosEscuela(
+        public IReadOnlyList<ObjetoEscuelaBase> GetObjetosEscuela(
                         out int conteoEvaluaciones,
                         bool traeEvaluaciones,
                         bool traeAlumnos,
@@ -45,7 +46,7 @@ namespace CoreEscuela {
 
         }
 
-        public List<ObjetoEscuelaBase> GetObjetosEscuela(
+        public IReadOnlyList<ObjetoEscuelaBase> GetObjetosEscuela(
                         out int conteoEvaluaciones,
                         out int conteoCursos,
                         bool traeEvaluaciones,
@@ -58,7 +59,7 @@ namespace CoreEscuela {
 
         }
 
-        public List<ObjetoEscuelaBase> GetObjetosEscuela(
+        public IReadOnlyList<ObjetoEscuelaBase> GetObjetosEscuela(
                             out int conteoEvaluaciones,
                             out int conteoCursos,
                             out int conteoAsignaturas,
@@ -72,7 +73,7 @@ namespace CoreEscuela {
 
         }
 
-        public List<ObjetoEscuelaBase> GetObjetosEscuela (
+        public IReadOnlyList <ObjetoEscuelaBase> GetObjetosEscuela (
                         out int conteoEvaluaciones,
                         out int conteoCursos,
                         out int conteoAsignaturas,
@@ -108,7 +109,7 @@ namespace CoreEscuela {
                 }
             }
 
-            return (listaObj);
+            return (listaObj.AsReadOnly());
         }
 
         #region Metodos de Carga
