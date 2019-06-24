@@ -26,13 +26,7 @@ namespace CoreEscuela {
             }
 
             Printer.WriteTitle("Acceso a Diccionario");
-            //WriteLine(diccionario[23]);
-            diccionario[0]="Omar";
-            WriteLine(diccionario[0]);
-            Printer.WriteTitle("Otro diccionario");
-            var dic= new Dictionary<string,string>();
-            dic["a"]="alexander";
-            WriteLine(dic["a"]);
+           
 
 
         }
