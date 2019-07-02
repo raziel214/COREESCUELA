@@ -24,8 +24,10 @@ namespace CoreEscuela {
                 WriteLine($"key: {keyValPair.Key} valor:{keyValPair.Value}");
                 
             }
+            var dictmp=engine.GetDiccionarioObjetos();
 
-            Printer.WriteTitle("Acceso a Diccionario");
+            //Printer.WriteTitle("Acceso a Diccionario");
+            engine.ImprimirDiccionario(dictmp);
            
 
 
