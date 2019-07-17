@@ -9,28 +9,24 @@ using static System.Console;
 namespace CoreEscuela {
     class Program {
         static void Main (string[] args) {
+
+            AppDomain.CurrentDomain.ProcessExit+=AccionDelEvento;
+            AppDomain.CurrentDomain.ProcessExit += (o, s)=> Printer.Beep(2000,1000,1);
             var engine = new EscuelaEngine ();
             engine.Inicializar ();
             Printer.WriteTitle ("BIENVENIDOS A LA ESCUELA");
-            //Printer.Beep(10000, cantidad: 10);
-            ImpimirCursosEscuela (engine.Escuela);
-            Dictionary<int, string> diccionario = new Dictionary<int, string>();
-
-            diccionario.Add(10,      "JohnF");
-            diccionario.Add(23, "Ibeth Amor");
-
-            foreach (var keyValPair in diccionario)
-            {
-                WriteLine($"key: {keyValPair.Key} valor:{keyValPair.Value}");
-                
-            }
-            var dictmp=engine.GetDiccionarioObjetos();
-
-            //Printer.WriteTitle("Acceso a Diccionario");
-            engine.ImprimirDiccionario(dictmp);
+            var reporteador = new Reporteador(engine.GetDiccionarioObjetos());
            
 
 
+        }
+
+        private static void AccionDelEvento(object sender, EventArgs e)
+        {
+            Printer.WriteTitle("SALIENDO");
+            Printer.Beep(3000,1000,3);
+            Printer.WriteTitle("SALIÓ");
+            //throw new NotImplementedException();
         }
 
         private static void ImpimirCursosEscuela (Escuela escuela) {

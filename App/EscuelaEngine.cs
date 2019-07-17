@@ -25,7 +25,7 @@ namespace CoreEscuela {
         }
 
         public  void ImprimirDiccionario(Dictionary<LlaveDiccionario, IEnumerable<ObjetoEscuelaBase>> dic,
-                        bool imprEval=false)
+                        bool imprEval=true)
         {
             foreach (var objdic in dic)
             {
@@ -47,6 +47,16 @@ namespace CoreEscuela {
                         case LlaveDiccionario.Alumno:                           
                                 System.Console.WriteLine("Alumno: " + val.Nombre);
                          break;
+
+                        case LlaveDiccionario.Curso:
+                            var curtmp=val as Curso;
+                            if (curtmp!=null)
+                            {
+                                int count = ((Curso)val).Alumnos.Count;
+                                System.Console.WriteLine("Curso: " + val.Nombre + " Cantidad Alumnos :" + count);
+                            }
+                            
+                            break;
 
                         default:
                             System.Console.WriteLine(val);
@@ -216,13 +226,14 @@ namespace CoreEscuela {
             foreach (var curso in Escuela.Cursos) {
                 foreach (var asignatura in curso.Asignaturas) {
                     foreach (var alumno in curso.Alumnos) {
-                        var rnd = new Random (System.Environment.TickCount);
+                        var rnd = new Random ();
 
                         for (int i = 0; i < 5; i++) {
                             var ev = new Evaluacion {
                                 Asignatura = asignatura,
                                 Nombre = $"{asignatura.Nombre} Ev#{i + 1}",
-                                Nota = (float) (5 * rnd.NextDouble ()),
+                                //Nota =((float)Math.Round((5 * rnd.NextDouble ()),2)),
+                                Nota = MathF.Round((float)(5 * rnd.NextDouble()), 2),
                                 Alumno = alumno
                             };
                             alumno.Evaluaciones.Add (ev);
