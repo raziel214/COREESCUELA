@@ -1,12 +1,10 @@
 namespace CoreEscuela.Entidades
 {
-
     public interface ILugar
     {
-        string Direccion { get; set; }
+       string Dirección { get; set; }
 
-        void LimpiarLugar();
-        
+       void LimpiarLugar();
+
     }
-
 }
